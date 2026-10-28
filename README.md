@@ -8,7 +8,9 @@ Painel pessoal para acompanhar a evolucao de exames laboratoriais: importa PDFs 
 
 ## Demonstracao online
 
-O link publico e uma **demonstracao com dados ficticios**, sem login e sem banco de dados. O GitHub Pages hospeda apenas arquivos estaticos; por isso o armazenamento real so funciona no servidor local.
+**Link:** https://fernandomagno.github.io/mybody/
+
+O link publico e uma **demonstracao com dados ficticios**, sem login e sem banco de dados. O GitHub Pages hospeda apenas arquivos estaticos; por isso o armazenamento real so funciona no servidor local. A publicacao e feita pelo workflow [CI e GitHub Pages](.github/workflows/ci-pages.yml) a cada envio para a `main`.
 
 ## Uso no seu computador
 
