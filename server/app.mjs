@@ -74,6 +74,7 @@ export function createApp({
   ],
   secureCookies = false,
   serveFrontend = false,
+  trustProxy = false,
 } = {}) {
   if (databasePath !== ":memory:")
     mkdirSync(dirname(databasePath), { recursive: true });
@@ -112,6 +113,7 @@ export function createApp({
   `);
   const app = express();
   app.disable("x-powered-by");
+  if (trustProxy) app.set("trust proxy", 1);
   app.use(
     helmet({
       contentSecurityPolicy: {

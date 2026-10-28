@@ -1,0 +1,14 @@
+{
+  "name": "My Body",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "24" }
+  },
+  "postCreateCommand": "npm ci && npm run build",
+  "postStartCommand": "nohup npm start > /tmp/mybody.log 2>&1 &",
+  "forwardPorts": [3001],
+  "portsAttributes": {
+    "3001": { "label": "My Body", "onAutoForward": "openBrowser" }
+  },
+  "hostRequirements": { "cpus": 2 }
+}

@@ -21,6 +21,17 @@ npm install
 npm run dev
 ```
 
+## Sistema completo no GitHub Codespaces
+
+O sistema completo (login, banco SQLite e leitura de PDF) roda no Codespaces, ja configurado em `.devcontainer`.
+
+1. No repositorio, clique em **Code**, **Codespaces** e **Create codespace on main**.
+2. Aguarde a instalacao. O servidor inicia sozinho e abre a porta **3001** no navegador. Ela e **privada**: so voce, logado no GitHub, acessa.
+3. Crie sua conta e guarde o codigo de recuperacao.
+4. Para desligar, use **Stop codespace** em https://github.com/codespaces. Ao ligar de novo, o servidor reinicia sozinho.
+
+O plano gratuito inclui 120 horas por mes de uso ativo. O banco fica dentro do codespace: **apagar o codespace apaga os dados**. Se o servidor nao subir, rode `npm start` no terminal.
+
 ## Verificacoes
 
 ```powershell
